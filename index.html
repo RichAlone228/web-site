@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <style>
+        :root {
+            --bg-color: #eef2f3;
+            --text-color: #2c3e50;
+            --sidebar-bg: #003366;
+            --sidebar-text: white;
+            --highlight: #0073e6;
+            --card-bg: #f9f9f9;
+        }
+        body.dark-theme {
+            --bg-color: #2c3e50;
+            --text-color: #eef2f3;
+            --sidebar-bg: #1a252f;
+            --sidebar-text: #b0d4ff;
+            --highlight: #66c2ff;
+            --card-bg: #1f2d3b;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        .resume-wrapper {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        .sidebar {
+            background: var(--sidebar-bg);
+            color: var(--sidebar-text);
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10%;
+            margin-bottom: 20px;
+        }
+        .sidebar h1 {
+            font-size: 1.8em;
+            margin: 0;
+        }
+        .sidebar p {
+            font-size: 1em;
+            margin: 5px 0 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: var(--sidebar-bg);
+            border-bottom: 2px solid var(--highlight);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .content section {
+            margin-bottom: 20px;
+        }
+        .content p, .content ul li {
+            background: var(--card-bg);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content ul li {
+            margin: 10px 0;
+        }
+        .photo-section img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: var(--text-color);
+            font-size: 0.9em;
+        }
+        footer a {
+            color: var(--highlight);
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--highlight);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .theme-toggle:hover {
+            background: var(--sidebar-bg);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="theme-toggle">Змінити тему</button>
+    <div class="resume-wrapper">
+        <div class="sidebar">
+            <img src="2.jpg" alt="Фото профілю">
+            <h1>Андрій Яковчук</h1>
+            <p>Учень ХДУ</p>
+            <ul>
+                <li>yakov18@gmail.com</li>
+                <li>+380 993 795 115</li>
+                <li>Новая-Каховка, Україна</li>
+            </ul>
+        </div>
+        <div class="content">
+            <section>
+                <h2>Ціль</h2>
+                <p>Отримати посаду молодшого розробника веб-додатків у прогресивній компанії, щоб застосувати свої технічні навички, розвиватися професійно та зробити внесок у розвиток сучасних технологій.</p>
+            </section>
+            <section>
+                <h2>О себе</h2>
+                <p>Мене звати Андрій Яковчук, і я студент 3 курсу, який вивчає комп'ютерні науки. Я захоплююсь веб-розробкою, створенням сучасних додатків та постійно вдосконалюю свої знання у сфері IT. Люблю працювати над цікавими проєктами, які допомагають вирішувати реальні проблеми.</p>
+            </section>
+            <section>
+                <h2>Освіта</h2>
+                <ul>
+                    <li><strong>2022-Зараз:</strong> Херсонський національний університет, спеціальність "Комп'ютерні науки" (навчаюсь)</li>
+                    <li><strong>2018-2022:</strong> Новокаховський техніко-економічний ліцей</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Навички</h2>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Базові знання SQL</li>
+                    <li>С++, C#</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Додаткова сторінка</h2>
+                <p>Я навчався у Новокаховському техніко-економічному ліцеї. Тут я отримав основи знань, які допомогли мені почати шлях у сфері IT.</p>
+            </section>
+            <section class="photo-section">
+                <img src="4.jpg" alt="Фото">
+            </section>
+            <section>
+                <h2>Плюси</h2>
+                <ul>
+                    <li>Богата кількість практичних занять</li>
+                    <li>Отримав базові знання з програмування</li>
+                    <li>Розвинув аналітичне мислення</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Мінуси</h2>
+                <ul>
+                    <li>Мало знайомство з цікавими проєктами</li>
+                    <li>Відсутність сучасного обладнання</li>
+                    <li>Не завжди актуальні навчальні матеріали</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Андрій Яковчук. Всі права захищені. <a href="#">Політика конфіденційності</a>
+    </footer>
+    <script>
+        const toggleButton = document.querySelector('.theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            toggleButton.textContent = 
+                document.body.classList.contains('dark-theme') ? 'Світла тема' : 'Темна тема';
+        });
+    </script>
+</body>
+</html>
